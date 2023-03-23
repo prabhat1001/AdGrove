@@ -12,7 +12,27 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { styled, alpha } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+const theme = createTheme ({
+  palette: {
+    primary: {
+      main: '#301E4E',
+    },
+    secondary: {
+      main: '#B7364A',
+    },
+  },
+  typography: {
+    fontFamily: 'Playfair Display',
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 600,
+  },
+
+});
 
 export default function Slider() {
   const [state, setState] = React.useState({
@@ -29,19 +49,16 @@ export default function Slider() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 350 }}
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 350, bgcolor: '#301E4E', height: '100vh' }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
         {['Services', 'About Us', 'Blogs', 'Contact Us'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+          <ListItem key={text} disablePadding sx={{bgcolor: '#301E4E'}}>
             <ListItemButton>
-              {/* <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon> */}
-              <ListItemText sx={{paddingLeft:2}} primary={text} />
+              <ListItemText sx={ListStyle} primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -52,6 +69,7 @@ export default function Slider() {
   );
 
   return (
+    <ThemeProvider theme={theme}>
     <div>
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
@@ -68,5 +86,13 @@ export default function Slider() {
         </React.Fragment>
       ))}
     </div>
+    </ThemeProvider>
   );
+}
+
+const ListStyle = {
+  paddingLeft:2,
+  fontFamily:'Playfair Display',
+  color: '#fff',
+  // bgcolor: '#301E4E',
 }
