@@ -9,14 +9,6 @@ import { styled, alpha } from '@mui/material/styles';
 import { Typography } from '@mui/material';
 
 const theme = createTheme ({
-    Card: {
-      width: 300,
-      margin: 'auto'
-    },
-    Media: {
-      height: '100%',
-      width: '100%'
-    },
     palette: {
       primary: {
         main: '#301E4E',
@@ -168,3 +160,4 @@ const heading3 = {
     justifyContent: 'center', 
   },
 }
+
