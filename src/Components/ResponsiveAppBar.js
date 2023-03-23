@@ -54,7 +54,7 @@ function ResponsiveAppBar() {
           
 
           
-          <Box sx={{ flexGrow: 1, display: { xs: 'none',sm:'flex', md: 'flex' },justifyContent:'flex-end'  }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none',sm:'flex', md: 'flex' },justifyContent:'flex-end' }}>
             {pages.map((page) => (
               <Button
                 key={page}
