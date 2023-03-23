@@ -37,7 +37,7 @@ const Page3 = () => {
             <Box sx={innerBox}>
                 <Box sx={boxLeft}>
                     <Image src='/images/blob.png'></Image>
-                    <Typography sx={heading} variant='h2' color='primary'>WHAT WE DO.</Typography>
+                    <Typography sx={heading} variant='h1' color='primary'>WHAT WE DO.</Typography>
                     <Typography sx={subHeading} variant='h6' color='primary'>We do lots of stuffs , basically adding value to your product .</Typography>
                 </Box>
                 <Box sx={boxRight}>
@@ -70,7 +70,7 @@ export default Page3
 const outerBox ={
     // bgcolor: '#cfe8fc', 
     height: '100vh', 
-    border: '1px solid #000',
+    // border: '1px solid #000',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -112,7 +112,7 @@ const boxLeft ={
 }
 
 const Image= styled('img')(({ theme }) => ({
-    width: '70%',
+    width: '80%',
     height: '100%',
     [theme.breakpoints.between('sm','md')]: {
         
@@ -128,17 +128,19 @@ const heading = {
     position: 'absolute',
     // border: '1px solid #000',
     fontWeight: 'bold',
-    width: '40%',
-    top: '20%',
-    left: '5%',
+    width: '60%',
+    top: '10%',
+    left: '10%',
     [theme.breakpoints.between('sm','md')]: {
-        top: '30%',
-        fontSize: '2rem',
+        top: '20%',
+        fontSize: '3rem',
+        width: '50%',
     },
     [theme.breakpoints.down('sm')]: {
+        left: '5%',
         top: '5%',
         width: '40%',
-        fontSize: '2rem',
+        fontSize: '2.02rem',
     },
 }
 
@@ -149,8 +151,8 @@ const subHeading = {
     fontSize: '1.5rem',
     // border: '1px solid #000',
     width: '50%',
-    top: '55%',
-    left: '5%',
+    top: '60%',
+    left: '10%',
     [theme.breakpoints.between('sm','md')]: {
         top: '60%',
         fontSize: '1rem',
@@ -159,7 +161,8 @@ const subHeading = {
     },
     [theme.breakpoints.down('sm')]: {
         top: '65%',
-        width: '92%',
+        width: '85%',
+        left: '5%',
         fontWeight: 'normal',
         fontSize: '0.8rem',
     },
