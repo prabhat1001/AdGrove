@@ -2,11 +2,10 @@ import React from 'react'
 
 //import components
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 
 const theme = createTheme ({
     palette: {
