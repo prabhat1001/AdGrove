@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# AdGrove
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Adgrove! This project is a website, designed for a Digital media Agency to showcase their specialities through website.
+<br>
 
-## Available Scripts
+### Elegant & Powerfull
 
-In the project directory, you can run:
+![brandbird (13)](https://user-images.githubusercontent.com/71027441/227521656-20091cf8-8729-4c72-a3ea-494e12d27662.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📍 Live link
+To watch it live in action, just click the link below
+<br>
+[Click Here](https://ad-grove.vercel.app/)
+<br>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Getting Started
+To get started with this project, simply clone the repository and run on your system. 
+No additional setup is required.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Contribute
+We're always looking for contributors to help improve this project. If you're interested, feel free to fork the repository and submit a pull request. -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Support
+For support, please reach out at prabhatsaraswat24@gmail.com.
+<br>
+We hope you enjoy using this minimalistic Monochrome!
+<br>
 
-### `npm run eject`
+<div align="centre" style="display: flex;">
+  <img  src="https://user-images.githubusercontent.com/71027441/222913566-65896045-f6db-4d2b-89bf-d561d7457c6c.gif" alt="Image 1" width="20%" height="auto" style="margin-right: 16px;">
+  <img src="https://user-images.githubusercontent.com/71027441/222913578-65842e33-c7c1-474b-9367-decf15558631.gif" alt="Image 2" width="20%" height="auto" style="margin-right: 16px;">
+  <img src="https://user-images.githubusercontent.com/71027441/222913588-c7ceadc5-18c0-44ae-9f6b-8d7733b6a269.gif" alt="Image 3" width="20%" height="auto" style="margin-right: 16px;">
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
