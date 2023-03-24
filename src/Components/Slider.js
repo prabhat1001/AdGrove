@@ -2,16 +2,9 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { styled, alpha } from "@mui/material/styles";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -51,34 +44,30 @@ export default function Slider() {
 
   const list = (anchor) => (
     <Box
-      sx={{
-        width: anchor === "top" || anchor === "bottom" ? "auto" : 350,
-        bgcolor: "#301E4E",
-        height: "100vh",
-      }}
+      sx={sideDrawer}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        {["Services", "About Us", "Blogs", "Contact Us"].map((text, index) => (
-          <ListItem key={text} disablePadding sx={{ bgcolor: "#301E4E" }}>
-            <ListItemButton>
-              <ListItemText sx={ListStyle} primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-
-      <Button
-        sx={{
-          "&:hover": { backgroundColor: "#ff3072" },
-          marginLeft: 4,
-          bgcolor: "#FF6E6C",
-          fontFamily: "Source Sans Pro",
-        }}
-        variant="contained"
+      <IconButton
+        sx={closeIcon}
+        size="normal"
+        aria-label="account of current user"
+        aria-controls="menu-appbar"
+        aria-haspopup="true"
+        color="inherit"
       >
+        <CloseIcon sx={{ color: "#1F1235" }} />
+      </IconButton>
+
+      <UL>
+        <LI>Services</LI>
+        <LI>About Us</LI>
+        <LI>Blogs</LI>
+        <LI>Contact Us</LI>
+      </UL>
+
+      <Button sx={buttonStyle} variant="contained">
         Book an free marketing Aduit
       </Button>
     </Box>
@@ -104,6 +93,7 @@ export default function Slider() {
               anchor={anchor}
               open={state[anchor]}
               onClose={toggleDrawer(anchor, false)}
+              elevation={3}
             >
               {list(anchor)}
             </Drawer>
@@ -114,9 +104,87 @@ export default function Slider() {
   );
 }
 
+const sideDrawer = {
+  width: 450,
+  bgcolor: "#301E4E",
+  height: "100%",
+  [theme.breakpoints.between("sm", "md")]: {
+    width: 350,
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: 320,
+  },
+};
+
+const closeIcon = {
+  bgcolor: "#E7D7F6",
+  "&:hover": { backgroundColor: "#FF6E6C" },
+  position: "absolute",
+  right: "9%",
+  top: "3%",
+};
+
 const ListStyle = {
   paddingLeft: 2,
   fontFamily: "Playfair Display",
-  color: "#fff",
+  color: "#000",
+  fontSize: "5.2rem",
   // bgcolor: '#301E4E',
+};
+
+const listItem = {};
+
+//---------------------
+
+const UL = styled("ul")(({ theme }) => ({
+  width: "80%",
+  height: "60vh",
+  // border: "1px solid #fff",
+  marginTop: "20%",
+  marginLeft: "10%",
+  // bgcolor: "#301E4E",
+  [theme.breakpoints.between("sm", "md")]: {
+    height: "50vh",
+  },
+  [theme.breakpoints.down("sm")]: {
+    height: "30vh",
+  },
+}));
+
+const LI = styled("li")(({ theme }) => ({
+  fontFamily: "Playfair Display",
+  // border: "1px solid #fff",
+  cursor: "pointer",
+  height: "25%",
+  listStyle: "none",
+  display: "flex",
+  fontSize: "3rem",
+  fontWeight: "400",
+  color: "#fff",
+  [theme.breakpoints.between("sm", "md")]: {
+    fontSize: "2rem",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1.2rem",
+  },
+}));
+
+const buttonStyle = {
+  "&:hover": { backgroundColor: "#ff3072" },
+  marginLeft: "10%",
+  bgcolor: "#FF6E6C",
+  fontFamily: "Source Sans Pro",
+  padding: "1rem 4rem",
+  marginTop: "5%",
+  borderRadius: "10px",
+  fontSize: "1rem",
+  [theme.breakpoints.between("sm", "md")]: {
+    fontSize: "0.8rem",
+    padding: "1rem 3rem",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.6rem",
+    padding: "0.5rem 1rem",
+    borderRadius: "7px",
+  },
 };
