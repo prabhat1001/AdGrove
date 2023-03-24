@@ -132,7 +132,7 @@ const Image = styled("img")(({ theme }) => ({
 
 const heading = {
   position: "absolute",
-  border: '1px solid #000',
+  // border: '1px solid #000',
   fontWeight: "bold",
   width: "57%",
   fontSize: '5rem',
