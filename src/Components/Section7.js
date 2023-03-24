@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 //import components
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
@@ -52,7 +51,6 @@ const outerBox = {
     display: 'flex',
     position: 'relative',
     
-
     [theme.breakpoints.between('sm','md')]: {
         height: '40vh',
     },
