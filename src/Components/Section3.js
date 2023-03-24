@@ -132,11 +132,15 @@ const Image = styled("img")(({ theme }) => ({
 
 const heading = {
   position: "absolute",
-  // border: '1px solid #000',
+  border: '1px solid #000',
   fontWeight: "bold",
-  width: "60%",
+  width: "57%",
+  fontSize: '5rem',
   top: "10%",
-  left: "10%",
+  left: "8%",
+  [theme.breakpoints.up("lg")]: {
+    width: "50%",
+  },
   [theme.breakpoints.between("sm", "md")]: {
     top: "20%",
     fontSize: "3rem",
