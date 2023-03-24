@@ -64,7 +64,7 @@ export default function Slider() {
         ))}
       </List>
       
-      <Button sx={{"&:hover": {backgroundColor: "#ff3072"}, marginLeft: 4, bgcolor: '#FF6E6C'}} variant="contained">Book an free marketing Aduit</Button>
+      <Button sx={{"&:hover": {backgroundColor: "#ff3072"}, marginLeft: 4, bgcolor: '#FF6E6C', fontFamily: 'Source Sans Pro',}} variant="contained">Book an free marketing Aduit</Button>
     </Box>
   );
 
